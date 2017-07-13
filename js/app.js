@@ -25,3 +25,12 @@ projectData.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projectList').append(project.toHtml());
 });
+
+$(document).ready(function() {
+  $('.tab').on('click', function(e) {
+    e.preventDefault();
+    $('.tab-content').hide();
+    $('#' + $(this).attr('data-content')).show();
+  });
+  $('.tab:first').click();
+});

@@ -16,13 +16,14 @@
       </figure>
     </header>
     <nav>
+      <button type="button" name="menu">&#xe9bd;</button>
       <ul>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
+        <li><a class="tab" href="" data-content="projectList">Projects</a></li>
+        <li><a class="tab" href="" data-content="aboutSection">About</a></li>
         <li><a href="https://github.com/squeekyfoot">Github</a></li>
       </ul>
     </nav>
-    <main id="projectList">
+    <main class="tab-content" id="projectList">
       <article class="project template">
         <h1>Project</h1>
         <div class="description">
@@ -30,7 +31,7 @@
         </div>
       </article>
     </main>
-    <section>
+    <section class="tab-content" id="aboutSection">
       <h1>About Me</h1>
       <div class="about">
         <h3>Background</h3>
@@ -53,10 +54,10 @@
     </section>
     <footer>
       <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
       </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
