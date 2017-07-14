@@ -10,12 +10,9 @@ function Project(data) {
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('.template').clone();
-  $newProject.removeClass('template');
-  $newProject.css('background-image', this.image);
-  $newProject.find('h1').text(this.name);
-  $newProject.find('p').text(this.description);
-  return $newProject;
+  var template = $('#entry-template').html();
+  var compiled = Handlebars.compile(template);
+  return compiled(this);
 };
 
 projectData.forEach(function(projectObject) {
