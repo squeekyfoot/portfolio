@@ -1,1 +1,8 @@
-
+@media (min-width: 500px) {
+  main article, nav li {
+    display: inline-block;
+  }
+  button {
+    display: none;
+  }
+}
