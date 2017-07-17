@@ -29,6 +29,10 @@ button {
 	height: 30px;
 }
 
+nav li {
+	display: none;
+}
+
 main article {
 	background-color: red;
 	width: 300px;
