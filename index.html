@@ -5,9 +5,10 @@
     <title>David Broxton Portfolio</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/icons.css">
-    <link rel="stylesheet" href="styles/layout.css">
+     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script  id="entry-template" type="text/x-handlebars-template">
+    <!-- TODO: Remove inline style. -->
       <article class="project" style="background-image: url('{{image}}');">
         <a href="{{projectUrl}}">
           <h1>{{name}}</h1>
@@ -25,7 +26,7 @@
         <figcaption>David Broxton</figcaption>
       </figure>
     </header>
-    <nav>
+     <nav>
       <button type="button" class="icon-menu"></button>
       <ul>
         <li><a class="tab" href="" data-content="projectList">Projects</a></li>
@@ -40,15 +41,18 @@
       <h1>About Me</h1>
       <div class="about">
         <h3>Background</h3>
+        <!--TODO: Replace ipsum with real content. -->
         <p>Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.</p>
       </div>
       <div class="about">
         <h3>Interests</h3>
+        <!--TODO: Replace ipsum with real content. -->
         <p>Robot ipsum datus scan amet, constructor ad ut splicing elit, sed do errus mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter. Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim id est proceus.</p>
       </div>
       <div class="list">
         <h3>Skills</h3>
         <ul>
+          <!--TODO: Replace placeholder content. -->
           <li>qwera</li>
           <li>asdfa</li>
           <li>werh</li>
@@ -59,6 +63,7 @@
     </section>
     <footer>
       <ul>
+        <!--TODO: Replace placeholder content with links and other information. -->
         <li><a href="#">Link 1</a></li>
         <li><a href="#">Link 2</a></li>
         <li><a href="#">Link 3</a></li>
@@ -67,6 +72,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <!-- NOTE: type="text/javascript" is the default, so no need to add this tag. -->
     <script type="text/javascript" src="js/projectData.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
