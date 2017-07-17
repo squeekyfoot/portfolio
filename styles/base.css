@@ -1,4 +1,4 @@
-
+/* TODO: Use consistent indentation, usually 2 spaces for properties */
 /*Basic CSS Reset used below:*/
 
 * {
@@ -27,6 +27,10 @@ button {
 	width: 200px;
 	max-width: 60%;
 	height: 30px;
+}
+
+nav li {
+	display: none;
 }
 
 main article {
