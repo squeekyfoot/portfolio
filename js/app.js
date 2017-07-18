@@ -15,13 +15,18 @@ Project.prototype.toHtml = function() {
   return compiled(this);
 };
 
-projectData.forEach(function(projectObject) {
-  projects.push(new Project(projectObject));
+$.getJSON('../data/projectData.json').then(function(data) {
+  var retrievedData = data;
+  retrievedData.forEach(function(projectObject) {
+    projects.push(new Project(projectObject));
+  });
+  projects.forEach(function(project) {
+    $('#projectList').append(project.toHtml());
+  });
+}, function(error) {
+  console.log(error);
 });
 
-projects.forEach(function(project) {
-  $('#projectList').append(project.toHtml());
-});
 
 $(document).ready(function() {
   $('.tab').on('click', function(e) {
