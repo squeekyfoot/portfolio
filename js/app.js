@@ -7,7 +7,7 @@ function Project(data) {
   this.description = data.description;
   this.image = data.image;
   this.projectUrl = data.projectUrl;
-};
+}
 
 Project.prototype.toHtml = function() {
   var template = $('#entry-template').html();
