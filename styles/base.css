@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: 0;
   box-sizing: border-box;
-	}
+}
 
 /*Basic Style rules for page elements below:*/
 
@@ -27,17 +27,4 @@ button {
 	width: 200px;
 	max-width: 60%;
 	height: 30px;
-}
-
-nav li {
-	display: none;
-}
-
-main article {
-	background-color: red;
-	width: 300px;
-	max-width: 70%;
-	height: 300px;
-	margin: 20px auto;
-
 }
