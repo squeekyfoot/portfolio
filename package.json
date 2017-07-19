@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squeekyfoot/portfolio.git"
+  },
+  "author": "David Broxton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/squeekyfoot/portfolio/issues"
+  },
+  "homepage": "https://github.com/squeekyfoot/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
