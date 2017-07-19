@@ -1,0 +1,12 @@
+nav li {
+	display: none;
+}
+
+main article {
+	background-color: red;
+	width: 300px;
+	max-width: 70%;
+	height: 300px;
+	margin: 20px auto;
+
+}
