@@ -17,17 +17,10 @@ Project.prototype.toHtml = function() {
 
 $.getJSON('../data/projectData.json').then(function(data) {
   var retrievedData = data;
-  // retrievedData.forEach(function(projectObject) {
-  //   projects.push(new Project(projectObject));
-  projects = retrievedData.map(function(project) {
-    return new Project(project);
-  })
-
-  // });
+  projects = retrievedData.map((project) => {return new Project(project)});
   projects.forEach(function(project) {
     $('#projectList').append(project.toHtml());
   });
-  console.log('Completed!');
 }, function(error) {
   console.log(error);
 });
