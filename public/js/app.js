@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];
+let projects = [];
 
 function Project(data) {
   this.name = data.name;
@@ -10,17 +10,15 @@ function Project(data) {
 }
 
 Project.prototype.toHtml = function() {
-  var template = $('#entry-template').html();
-  var compiled = Handlebars.compile(template);
+  let template = $('#entry-template').html();
+  let compiled = Handlebars.compile(template);
   return compiled(this);
 };
 
-$.getJSON('../data/projectData.json').then(function(data) {
-  var retrievedData = data;
-  projects = retrievedData.map((project) => {return new Project(project)});
-  projects.forEach(function(project) {
-    $('#projectList').append(project.toHtml());
-  });
+$.getJSON('../data/projectData.json').then(data => {
+  let retrievedData = data;
+  projects = retrievedData.map(project => {return new Project(project)});
+  projects.map(project => {$('#projectList').append(project.toHtml())});
 }, function(error) {
   console.log(error);
 });
