@@ -2,8 +2,8 @@
 
 var app = app || {};
 
-page('/', function);
-page('/projects', function);
-page('/about', function);
+page('/', app.projectController.initProjectView);
+page('/projects', app.projectController.initProjectView);
+page('/about', app.aboutController.initAboutView);
 
 page();
