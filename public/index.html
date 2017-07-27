@@ -20,6 +20,12 @@
         </a>
       </article>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <h1>A list of all Projects:</h1>
+      <h3>{{name}}</h3>
+      <a href="{{html_url}}">URL: {{html_url}}</a>
+      <p>Last Updated: {{updated_at}}</p>
+    </script>
   </head>
   <body>
     <header>
@@ -75,7 +81,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="js/model/githubToken.js"></script>
     <script src="js/model/project.js"></script>
+    <script src="js/model/projectList.js"></script>
     <script src="js/view/projectView.js"></script>
     <script src="js/controller/aboutController.js"></script>
     <script src="js/controller/projectController.js"></script>

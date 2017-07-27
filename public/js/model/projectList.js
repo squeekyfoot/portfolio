@@ -3,15 +3,16 @@
 var app = app || {};
 
 (function(module){
-  module.initProjectList = function () {
-    $.ajax({
-      url: 'https://api.github.com/users/squeekyfoot/repos',
-      method: 'GET',
-      headers: {
-        Authorization: `token ${githubToken}`
-      }
+  module.initProjectList = function (callback) {
+    $.get({
+      url: 'https://api.github.com/users/squeekyfoot/repos'
     }).then(data => {
-      //DO STUFF HERE
+      let mappedData = data.map({
+        name: this.name,
+        html_url: this.html_url,
+        updated_at: this.updated_at
+      })
+      callback(mappedData);
     })
   }
 })(app);
