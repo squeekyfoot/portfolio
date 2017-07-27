@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./public'));
 
-app.get('/github/*', proxyGitHub);
+app.get('https://api.github.com/*', proxyGitHub);
 
 app.listen(PORT, function() {
   console.log(`Server has started. Listening to port ${PORT}`);
