@@ -5,9 +5,10 @@ const app = express();
 const requestProxy = require('express-request-proxy');
 const PORT = process.env.PORT || 3000;
 
-let conString = process.env.CONNECTION_STRING;
-if(!conString)
-  conString = `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`
+// APP DOES NOT CURRENTLY USE A DATABASE
+// let conString = process.env.CONNECTION_STRING;
+// if(!conString)
+//   conString = `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/kilovolt`
 
 
 app.use(express.static('./public'));
