@@ -22,7 +22,7 @@ var app = app || {};
   $.getJSON('../data/projectData.json').then(data => {
     let retrievedData = data;
     Project.projects = retrievedData.map(project => {return new Project(project)});
-    Project.projects.map(project => {$('#projectList').append(project.toHtml())});
+    Project.projects.map(project => {$('#projectTiles').append(project.toHtml())});
   }, function(error) {
     console.log(error);
   });

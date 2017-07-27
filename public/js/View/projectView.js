@@ -9,10 +9,12 @@ var app = app || {};
   projectView.initIndexPage = () => {
     app.Project.projects.map(project => {$('#projectList').append(project.toHtml())});
 
-    app.repoTemplate = Handlebars.compile($('#repo-template').html());
+    let repoTemplate = Handlebars.compile($('#repo-template').html());
 
     app.initProjectList(mappedData => {
-      $('#projectList'.append(app.repoTemplate(mappedData)));
+      mappedData.forEach(function (repo) {
+        $('#projectIndex').append(repoTemplate(repo))
+      })
     })
   }
 
