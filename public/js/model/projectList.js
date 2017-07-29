@@ -3,6 +3,7 @@
 var app = app || {};
 
 (function(module){
+
   module.initProjectList = function (callback) {
     $.ajax({
       url: 'https://api.github.com/users/squeekyfoot/repos',

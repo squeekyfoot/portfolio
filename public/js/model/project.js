@@ -3,7 +3,6 @@ var app = app || {};
 
 
 (function(module){
-
   Project.projects = [];
 
   function Project(data) {

@@ -3,6 +3,7 @@
 var app = app || {};
 
 (function(module) {
+
   const aboutController = {};
 
   aboutController.initAboutView = () => {
